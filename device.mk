@@ -46,7 +46,10 @@ PRODUCT_PACKAGES += \
     init.mmi.mot_device.rc
 
 # Sensors
-PRODUCT_COPY_FILES += $(LOCAL_PATH)/configs/sensors/hals.conf:system/etc/sensors/hals.conf \
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/sensors/hals.conf:system/vendor/etc/sensors/hals.conf \
+    $(LOCAL_PATH)/../msm8953-common/configs/sensors/sensor_def_qcomdev.conf:system/vendor/etc/sensors/sensor_def_qcomdev.conf
+
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-service_32 \
     sensorservice_32
