@@ -17,10 +17,10 @@
 
 set -e
 
-export DEVICE=cedric
+export DEVICE=montana
 export DEVICE_COMMON=msm8953-common
 export VENDOR=motorola
 
-export DEVICE_BRINGUP_YEAR=2017
+export DEVICE_BRINGUP_YEAR=2018
 
 ./../../$VENDOR/$DEVICE_COMMON/extract-files.sh $@

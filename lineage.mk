@@ -19,8 +19,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from cedric device
-$(call inherit-product, device/motorola/cedric/device.mk)
+# Inherit from montana device
+$(call inherit-product, device/motorola/montana/device.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
@@ -30,11 +30,11 @@ TARGET_SCREEN_WIDTH := 1080
 TARGET_SCREEN_HEIGHT := 1920
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := cedric
-PRODUCT_NAME := lineage_cedric
+PRODUCT_DEVICE := montana
+PRODUCT_NAME := lineage_montana
 PRODUCT_BRAND := motorola
 PRODUCT_MANUFACTURER := motorola
-PRODUCT_MODEL := Moto G5
+PRODUCT_MODEL := Moto G5s
 
 PRODUCT_ENFORCE_RRO_TARGETS := \
     framework-res
@@ -42,7 +42,7 @@ PRODUCT_ENFORCE_RRO_TARGETS := \
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST := ro.product.model
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME="Moto G5"
+    PRODUCT_NAME="Moto G5s"
 
 # for specific
-$(call inherit-product, vendor/motorola/cedric/cedric-vendor.mk)
+$(call inherit-product, vendor/motorola/montana/montana-vendor.mk)

@@ -1,5 +1,5 @@
 #
-# system.prop for cedric
+# system.prop for montana
 #
 
 # Camera
@@ -30,7 +30,7 @@ ro.hwui.text_large_cache_width=2048
 ro.hwui.text_large_cache_height=2048
 
 # IMS
-persist.ims.volte=false
+persist.ims.volte=true
 ro.config.hw_volte_on=true
 
 # Radio

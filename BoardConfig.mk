@@ -15,7 +15,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-DEVICE_PATH := device/motorola/cedric
+DEVICE_PATH := device/motorola/montana
 
 # Platform
 TARGET_BOARD_PLATFORM := msm8937
@@ -25,17 +25,17 @@ TARGET_BOARD_PLATFORM_GPU := qcom-adreno505
 TARGET_BOOTLOADER_BOARD_NAME := MSM8937
 
 # Asserts
-TARGET_OTA_ASSERT_DEVICE := cedric,cedric_retail
+TARGET_OTA_ASSERT_DEVICE := montana,montana_retail
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_cedric
-TARGET_RECOVERY_DEVICE_MODULES := libinit_cedric
+TARGET_INIT_VENDOR_LIB := libinit_montana
+TARGET_RECOVERY_DEVICE_MODULES := libinit_montana
 
 # Kernel
 BOARD_KERNEL_LZ4C_DT := true
 KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-4.9/bin
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-androidkernel-
-TARGET_KERNEL_CONFIG := cedric_defconfig
+TARGET_KERNEL_CONFIG := montana_defconfig
 
 # Partitions
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 16879616    #    16484 * 1024 mmcblk0p38
@@ -50,4 +50,4 @@ BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 -include device/motorola/msm8953-common/BoardConfigCommon.mk
 
 # inherit from the proprietary version
--include vendor/motorola/cedric/BoardConfigVendor.mk
+-include vendor/motorola/montana/BoardConfigVendor.mk

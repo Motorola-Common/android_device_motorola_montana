@@ -1,6 +1,6 @@
 LOCAL_PATH:= $(call my-dir)
 
-# cedric init scripts
+# montana init scripts
 
 include $(CLEAR_VARS)
 LOCAL_MODULE       := init.mmi.mot_device.rc
