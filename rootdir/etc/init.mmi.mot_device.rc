@@ -15,5 +15,11 @@ on boot
     chown system oem_5004 /sys/bus/spi/devices/spi1.0/irq_cnt
     chmod 0440 /sys/bus/spi/devices/spi1.0/irq_cnt
 
+# Montana uses qcom sensor service
+service sensors /system/vendor/bin/sensors.qcom
+    class core
+    user root
+    group root
+
 on moto-charger
     setprop ro.board.platform msm8937
