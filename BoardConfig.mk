@@ -37,6 +37,9 @@ KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aa
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-androidkernel-
 TARGET_KERNEL_CONFIG := montana_defconfig
 
+# Manifest
+DEVICE_MANIFEST_FILE := $(PLATFORM_PATH)/configs/manifest.xml
+
 # Partitions
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 16879616    #    16484 * 1024 mmcblk0p38
 BOARD_CACHEIMAGE_PARTITION_SIZE := 268435456      #   262144 * 1024 mmcblk0p52
