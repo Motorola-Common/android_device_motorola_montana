@@ -18,8 +18,8 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/motorola/sanders/full_sanders.mk)
 
-# Inherit some common SacredOS stuff.
-$(call inherit-product, vendor/sacred/common.mk)
+# Inherit some common CM stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Boot animation
 TARGET_SCREEN_WIDTH := 1080
@@ -30,6 +30,9 @@ PRODUCT_DEVICE := sanders
 PRODUCT_NAME := sacred_sanders
 PRODUCT_BRAND := motorola
 PRODUCT_MANUFACTURER := motorola
+
+PRODUCT_ENFORCE_RRO_TARGETS := \
+    framework-res
 
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST := ro.product.model
 

@@ -1,0 +1,26 @@
+on post-fs-data
+    # Sensor Hub calibration data directory
+    mkdir /data/misc/sensorhub 0770 system compass
+
+on boot
+   #change ownership and permission for LTR559
+   chown system system /sys/class/sensors/Rear\ Proximity\ sensor/enable
+   chown system system /sys/class/sensors/Rear\ Proximity\ sensor/poll_delay
+   chown system system /sys/class/sensors/Rear\ Proximity\ sensor/enable_wakeup
+   chmod 0660 /sys/class/sensors/Rear\ Proximity\ sensor/enable
+   chmod 0660 /sys/class/sensors/Rear\ Proximity\ sensor/poll_delay
+   chmod 0660 /sys/class/sensors/Rear\ Proximity\ sensor/enable_wakeup
+
+   # Change permission for fingerprint sensor
+   chown system oem_5004 /sys/bus/spi/devices/spi8.0/nav
+   chown system oem_5004 /sys/bus/spi/devices/spi8.0/clk_enable
+   chown system oem_5004 /sys/bus/spi/devices/spi8.0/dev_enable
+   chown system oem_5004 /sys/bus/spi/devices/spi8.0/irq
+   chown system oem_5004 /sys/bus/spi/devices/spi8.0/irq_cnt
+   chmod 0440 /sys/bus/spi/devices/spi8.0/irq_cnt
+
+# Sanders uses qcom sensor service
+service sensors /system/vendor/bin/sensors.qcom
+    class core
+    user root
+    group root
