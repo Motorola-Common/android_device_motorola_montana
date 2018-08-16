@@ -47,8 +47,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl \
-    android.hardware.sensors@1.0-service_32 \
-    sensorservice_32
+    android.hardware.sensors@1.0-service
 
 # Thermal
 PRODUCT_COPY_FILES += \
@@ -58,10 +57,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     init.mmi_device.rc \
     init.qcom_device.rc
-
-# SensorService
-PRODUCT_PROPERTY_OVERRIDES += \
-    system_init.startsensorservice=0
 
 # Inherit from motorola msm8953-common
 $(call inherit-product, device/motorola/msm8953-common/common.mk)
