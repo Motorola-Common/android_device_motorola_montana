@@ -55,8 +55,7 @@ PRODUCT_COPY_FILES += \
 
 # Rootdir
 PRODUCT_PACKAGES += \
-    init.mmi_device.rc \
-    init.qcom_device.rc
+    init.mmi_device.rc
 
 # Inherit from motorola msm8953-common
 $(call inherit-product, device/motorola/msm8953-common/common.mk)
