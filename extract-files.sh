@@ -17,7 +17,7 @@
 
 set -e
 
-export DEVICE=sanders
+export DEVICE=montana
 export DEVICE_COMMON=msm8953-common
 export VENDOR=motorola
 

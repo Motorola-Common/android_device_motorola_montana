@@ -16,7 +16,7 @@
 
 
 # Inherit from those products. Most specific first.
-$(call inherit-product, device/motorola/sanders/full_sanders.mk)
+$(call inherit-product, device/motorola/montana/full_montana.mk)
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
@@ -26,8 +26,8 @@ TARGET_SCREEN_WIDTH := 1080
 TARGET_SCREEN_HEIGHT := 1920
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := sanders
-PRODUCT_NAME := lineage_sanders
+PRODUCT_DEVICE := montana
+PRODUCT_NAME := lineage_montana
 PRODUCT_BRAND := motorola
 PRODUCT_MANUFACTURER := motorola
 
@@ -37,4 +37,4 @@ PRODUCT_ENFORCE_RRO_TARGETS := \
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST := ro.product.model
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME="Moto G5S Plus"
+    PRODUCT_NAME="Moto G5S"

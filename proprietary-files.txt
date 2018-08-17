@@ -1,4 +1,4 @@
-# Proprietary files for sanders
+# Proprietary files for montana
 
 -app/datastatusnotification/datastatusnotification.apk
 -app/embms/embms.apk

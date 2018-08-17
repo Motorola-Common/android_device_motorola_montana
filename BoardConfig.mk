@@ -14,13 +14,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-DEVICE_PATH := device/motorola/sanders
+DEVICE_PATH := device/motorola/montana
 
 # Asserts
-TARGET_OTA_ASSERT_DEVICE := sanders,sanders_retail
+TARGET_OTA_ASSERT_DEVICE := montana,montana_retail
 
 # Kernel
-TARGET_KERNEL_CONFIG := sanders_defconfig
+TARGET_KERNEL_CONFIG := montana_defconfig
 
 # DT2W
 #TARGET_TAP_TO_WAKE_NODE := "/sys/android_touch/doubletap2wake"

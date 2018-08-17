@@ -1,5 +1,5 @@
 #
-# system.prop for sanders
+# system.prop for montana
 #
 
 rild.libargs=-d /dev/smd0
